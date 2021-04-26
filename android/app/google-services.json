@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "751627218911",
+    "project_id": "travel-with-sri-lanka",
+    "storage_bucket": "travel-with-sri-lanka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751627218911:android:04827a657e6544eac9de6a",
+        "android_client_info": {
+          "package_name": "com.diya.travel_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751627218911-8jb0i8d819hq4ta8f5jh390d8v83888r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA00VXgxJdhown7YcRo-fwstbMXY8TYudc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751627218911-8jb0i8d819hq4ta8f5jh390d8v83888r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
