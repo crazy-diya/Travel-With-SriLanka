@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_app/config/config.dart';
 import 'package:travel_app/home.dart';
 import 'package:travel_app/pages/login_pages/signup_page.dart';
@@ -49,19 +50,21 @@ class _LoginPageState extends State<LoginPage> {
                         children: [
                           Text(
                             "SIGN IN PAGE",
-                            style: TextStyle(
-                              fontSize: 36,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                            style:
+                              GoogleFonts.playfairDisplay(
+                                fontSize: 36.0,
+                                fontWeight: FontWeight.w700,
+                                color: Colors.white
                             ),
                             textAlign: TextAlign.center,
                           ),
                           Text(
                             "Get Ready To Travel with Us!",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w300),
-                          ),
+                            style: GoogleFonts.lato(
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white
+                            ),),
                           SizedBox(
                             height: 40,
                           ),
@@ -224,12 +227,13 @@ class _LoginPageState extends State<LoginPage> {
 
     if (TravelApp.user != null) {
       readData(TravelApp.user).then(
-        (value) => Navigator.pushAndRemoveUntil(
+        (value) => /*Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(
               builder: (context) => HomePage(),
             ),
-            (route) => false),
+            (route) => false),*/
+        Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(),))
       );
     }
   }
