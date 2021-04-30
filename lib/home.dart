@@ -22,6 +22,9 @@ class _HomePageState extends State<HomePage> {
     double _screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Container(
+        decoration: BoxDecoration(
+          color: Color(0xffffffff)
+        ),
         child: ListView(
           children: [
             Container(
@@ -587,7 +590,221 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 12.6),
+              height: 30.6,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 25.0, right: 9.6),
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(right: 19.2),
+                      height: 30.6,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9.6),
+                        border: Border.all(color: Colors.purple,width: 2,),
+                      ),
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                          Text(
+                            "Beach",
+                            style: GoogleFonts.playfairDisplay(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF000000),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 19.2),
+                      height: 30.6,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9.6),
+                        border: Border.all(color: Colors.grey,width: 2,),
+                      ),
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                          Text(
+                            "Mountain",
+                            style: GoogleFonts.playfairDisplay(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF000000),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 19.2),
+                      height: 30.6,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9.6),
+                        border: Border.all(color: Colors.green,width: 2,),
+                      ),
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                          Text(
+                            "WaterFalls",
+                            style: GoogleFonts.playfairDisplay(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF000000),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 19.2),
+                      height: 30.6,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9.6),
+                        border: Border.all(color: Colors.red,width: 2,),
+                      ),
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                          Text(
+                            "Rivers",
+                            style: GoogleFonts.playfairDisplay(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF000000),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 19.2),
+                      height: 30.6,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(9.6),
+                        border: Border.all(color: Colors.blue,width: 2,),
+                      ),
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                          Text(
+                            "Garden",
+                            style: GoogleFonts.playfairDisplay(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF000000),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 19.2,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: 120.8,
+              margin: EdgeInsets.only(top: 28, bottom: 16.8,left: 25),
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(right: 20),
+                    height: 120.8,
+                    width: 188.4,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(9.6),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/images/img12.jpg",),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20),
+                    height: 120.8,
+                    width: 188.4,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(9.6),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/images/img5.jpg",),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20),
+                    height: 120.8,
+                    width: 188.4,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(9.6),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/images/img3.jpg",),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20),
+                    height: 120.8,
+                    width: 188.4,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(9.6),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/images/img7.jpg",),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20),
+                    height: 120.8,
+                    width: 188.4,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(9.6),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/images/img13.jpg",),
+                      ),
+                    ),
+                  ),
+
+
+
+                ],
+              ),
+            ),
           ],
         ),
       ),
