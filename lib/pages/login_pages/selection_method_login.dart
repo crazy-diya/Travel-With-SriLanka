@@ -33,7 +33,7 @@ class _SelectionMethodLoginState extends State<SelectionMethodLogin> {
             child: Stack(
               children: [
                 Positioned(
-                  bottom: 30,
+                  bottom: 10,
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width,
                     child: Column(

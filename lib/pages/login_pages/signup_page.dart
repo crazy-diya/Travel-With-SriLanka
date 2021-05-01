@@ -217,9 +217,10 @@ class _SignupPageState extends State<SignupPage> {
                               ]),
                             ),
                           ),
-                          Container(
+                         /* Container(
                             width: MediaQuery.of(context).size.width,
-                            height: MediaQuery.of(context).size.height - 570,
+                            color: Colors.red,
+                            height: 100,
                             child: Stack(
                               alignment: Alignment.center,
                               children: [
@@ -278,11 +279,77 @@ class _SignupPageState extends State<SignupPage> {
                                 ),
                               ],
                             ),
-                          ),
+                          ),*/
                         ],
                       ),
                     ),
                   ),
+                  Positioned(
+                    bottom: 10,
+                    child:  Container(
+                      width: MediaQuery.of(context).size.width,
+                      //color: Colors.red,
+                      height: 90,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Positioned(
+                            bottom: 0,
+                            child: Column(
+                              children: [
+                                GestureDetector(
+                                  onTap: () {
+                                    uploadAndSaveImage();
+                                  },
+                                  child: Container(
+                                    height: 45,
+                                    width: 290,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.rectangle,
+                                      borderRadius:
+                                      BorderRadius.circular(25),
+                                      color: Colors.transparent,
+                                      border: Border.all(
+                                          color: Colors.white, width: 1),
+                                    ),
+                                    alignment: Alignment.center,
+                                    child: Text(
+                                      "SIGN UP",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                GestureDetector(
+                                  onTap: () => Navigator.of(context)
+                                      .pushReplacement(
+                                      new MaterialPageRoute(
+                                          builder: (BuildContext
+                                          context) =>
+                                              LoginPage())),
+                                  child: Text(
+                                    "Already have an Account",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 5,
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),

@@ -123,7 +123,7 @@ class _LoginPageState extends State<LoginPage> {
                               ]),
                             ),
                           ),
-                          Container(
+                          /*Container(
                             width: MediaQuery.of(context).size.width,
                             height: MediaQuery.of(context).size.height - 340,
                             child: Stack(
@@ -199,10 +199,91 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                               ],
                             ),
-                          ),
+                          ),*/
                         ],
                       ),
                     ),
+                  ),
+                  Positioned(
+                    bottom: 10,
+                      child: Container(
+                        //color: Colors.red,
+                        width: MediaQuery.of(context).size.width,
+                        height: 150,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Positioned(
+                              bottom: 0,
+                              child: Column(
+                                children: [
+                                  GestureDetector(
+                                    child: Container(
+                                      height: 45,
+                                      width: 290,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.rectangle,
+                                        borderRadius:
+                                        BorderRadius.circular(25),
+                                        color: Colors.transparent,
+                                        border: Border.all(
+                                            color: Colors.white, width: 1),
+                                      ),
+                                      alignment: Alignment.center,
+                                      child: Text(
+                                        "SIGN IN",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                    onTap:()=> _emailTextEditingController
+                                        .text.isNotEmpty &&
+                                        _passwordTextEditingController
+                                            .text.isNotEmpty
+                                        ? loginUser()
+                                        : ToastWidget().toastDesign(msg: "Fill the Email and Password!"),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
+                                    "Forgot Password",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                  Text(
+                                    "or",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () => Navigator.of(context)
+                                        .pushReplacement(
+                                        new MaterialPageRoute(
+                                            builder: (BuildContext
+                                            context) =>
+                                                SignupPage())),
+                                    child: Text(
+                                      "Create new Account",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w300),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                   ),
                 ],
               ),
