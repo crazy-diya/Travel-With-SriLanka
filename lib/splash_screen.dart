@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   displaySplash() {
     Timer(Duration(seconds: 1), ()  {
-      if(/*TravelApp.auth.currentUser != null*/false){
+      if(TravelApp.auth.currentUser != null/*false*/){
         Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage(),));
       }else{
         Navigator.of(context).push(MaterialPageRoute(builder: (context) => SelectionMethodLogin(),));
